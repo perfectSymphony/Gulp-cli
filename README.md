@@ -52,7 +52,8 @@ $ npm run start
 ```
 npm run build
 ```
-## 到w微信公众号去提问：
+## 到微信公众号去提问：
+![指尖下的精灵](https://raw.githubusercontent.com/perfectSymphony/Gulp-cli/b08538bc938d56aa729085bf5305afc425bf8d9c/Wechat/0.jpg)
 
 ## 小生后话
 * 此前端自动化构建及自动化部署框架
