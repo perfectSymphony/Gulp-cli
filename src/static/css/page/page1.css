@@ -1,0 +1,8 @@
+body #__bs_notify__ {
+  display: none !important;
+}
+h1 {
+  font-size: 25px;
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2UxLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLHlCQUF5QjtDQUMxQjtBQUNEO0VBQ0UsZ0JBQWdCO0NBQ2pCIiwiZmlsZSI6InBhZ2UvcGFnZTEuY3NzIiwic291cmNlc0NvbnRlbnQiOlsiYm9keSAjX19ic19ub3RpZnlfXyB7XG4gIGRpc3BsYXk6IG5vbmUgIWltcG9ydGFudDtcbn1cbmgxIHtcbiAgZm9udC1zaXplOiAyNXB4O1xufVxuIl19 */

@@ -1,0 +1,1 @@
+define(["mock"],function(t){t.mock("/user/getInfo",{status:1,data:{name:"gulp",title:"Gulp",content:"基于gulp搭建的前端自动化构建"}}),t.mock("/user/content",{status:2,data:{title:"Gulp",content:"基于gulp搭建的前端自动化构建"}})});

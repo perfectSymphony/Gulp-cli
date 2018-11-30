@@ -1,0 +1,1 @@
+define(["jquery","data","template"],function(i,e,t){i("body").css("visibility","visible")});
