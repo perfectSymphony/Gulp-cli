@@ -1,11 +1,12 @@
 ## Gulp-cli
 **基于gulp搭建的前端自动化构建。适用于中小型项目，快速构建前端项目框架。**
 
-##项目启动
+## 项目启动
 ```
 // 常用命令
-项目编译： npm run build
-项目编译并启动： npm run start
+项目单独编译： npm run build
+项目单独启动： npm run dev
+项目一键编译并启动： npm run start
 ```
 ## [项目地址](https://github.com/perfectSymphony/Gulp-cli)
 * 如对你有帮助，希望给个Star ！哈哈哈！！
@@ -34,6 +35,14 @@ git clone git@github.com:perfectSymphony/Gulp-cli.git
 │   └── views         # 页面
 ```
 
+## 项目中使用到的部分技术如下：
+```
+	- require：实现模块化开发;
+	- mock：实现本地模拟服务器端返回数据;
+	- art-template：使用到了html模块化封装，还有js模板;
+	- browsersync：启动本地浏览页面，并实现当源码更改时页面实时刷新;
+```
+
 ## 如何使用
 1、下载项目：
 ```
@@ -52,6 +61,13 @@ $ npm run start
 ```
 npm run build
 ```
+## 备注
+
+```
+Gulpfile.js中实现了项目自动化部署功能。需要用到自动化部署，可以在Gulpfile.js中配置一下` 'deployFile','execSSH' `就可以用了
+
+``` 
+
 ## 到w微信公众号去提问：
 
 ## 小生后话

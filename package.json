@@ -4,6 +4,7 @@
   "description": "前后端分离的脚手架工具",
   "scripts": {
     "build": "cross-env NODE_ENV=production gulp dist",
+    "dev": "cross-env NODE_ENV=production gulp",
     "nodeMiddle": "node src/server/server.js",
     "start": "cross-env NODE_ENV=production gulp dist && gulp"
   },
