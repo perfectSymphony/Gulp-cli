@@ -71,7 +71,7 @@ Gulpfile.js中实现了项目自动化部署功能。需要用到自动化部署
 
 ## 到微信公众号去提问：
 ![指尖下的精灵](https://raw.githubusercontent.com/perfectSymphony/Gulp-cli/b08538bc938d56aa729085bf5305afc425bf8d9c/Wechat/0.jpg)
->>>>>>> 57c5ed2d52bc632cd7cadb9bdbfec5dee8cb0031
+
 
 ## 小生后话
 * 此前端自动化构建及自动化部署框架
