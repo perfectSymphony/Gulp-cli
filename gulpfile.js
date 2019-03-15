@@ -68,6 +68,10 @@ const widgetPath = {
     dist: ['./dist/front/views/**/*']
 }
 
+// const widgetPath = {
+//     src: ['./src/views/widget/**/*', './src/views/layout/**/*']
+// }
+
 const showError = function(err) {
     console.log('\n错误文件:', err.file, '\n错误行数:', err.line, '\n错误信息:', err.message);
 }
