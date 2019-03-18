@@ -1,12 +1,7 @@
 ## Gulp-cli
 **基于requireJS和Gulp可快速搭建前端项目的脚手架。**
 
-## 项目启动命令
-```
-单独编译： npm run build
-单独启动： npm run dev
-编译并启动： npm run start
-```
+
 ## [项目地址](https://github.com/perfectSymphony/Gulp-cli)
 * 如对你有帮助，希望给个Star (*￣︶￣)
 ```
@@ -63,6 +58,13 @@ $ npm run start
 4、项目打包
 ```
 npm run build
+```
+
+## 项目启动命令
+```
+单独编译： npm run build
+单独启动： npm run dev
+编译并启动： npm run start
 ```
 
 ## 自动化部署功能
