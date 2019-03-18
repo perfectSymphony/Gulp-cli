@@ -7,6 +7,7 @@ require.config({
         qrcode: "public/qrcode/qrcode",
         template: "public/artTemplate/template",
         mock: "public/mockjs/mock.min",
+        layui: 'public/layui/layui',
         data: "data/data",
         index: "js/index/index",
         utils: "js/commonjs/utils",
@@ -19,6 +20,9 @@ require.config({
         },
         data: {
             deps: ["mock"]
+        },
+        layui: {
+            deps: ["style!public/layui/css/layui.css"]
         },
         index: {
             deps: ["style!css/page/index.css"]

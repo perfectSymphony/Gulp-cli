@@ -63,12 +63,12 @@ const gulpSSH = new GulpSSH({
 
 // console.log(sshConfig);
 
-//组件和模板地址 ----生产环境
+//组件和模板地址 ---- 生产环境
 // const widgetPath = {
 //     dist: ['./dist/front/**/*']
 // }
 
-//组件和模板地址 ----开发环境
+//组件和模板地址 ---- 开发环境
 const widgetPath = {
     src: ['./src/widget/**/*', './src/layout/**/*']
 }
