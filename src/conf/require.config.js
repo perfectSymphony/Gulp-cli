@@ -7,10 +7,11 @@ require.config({
         qrcode: "public/qrcode/qrcode",
         template: "public/artTemplate/template",
         mock: "public/mockjs/mock.min",
+        layui: 'public/layui/layui',
         data: "data/data",
-        index: "static/js/index/index",
-        utils: "static/js/commonjs/utils",
-        page1: "static/js/page1/page1"
+        index: "js/index/index",
+        utils: "js/commonjs/utils",
+        list: "js/list/list"
     },
     shim: {
         qrcode: {
@@ -20,11 +21,14 @@ require.config({
         data: {
             deps: ["mock"]
         },
-        index: {
-            deps: ["style!static/css/page/index.css"]
+        layui: {
+            deps: ["style!public/layui/css/layui.css"]
         },
-        page1: {
-            deps: ["style!static/css/page/page1.css"]
+        index: {
+            deps: ["style!css/page/index.css"]
+        },
+        list: {
+            deps: ["style!css/page/list.css"]
         }
     }
 });

@@ -5,14 +5,7 @@ define(["mock"], function(Mock) {
         data: {
             name: "gulp",
             title: "Gulp",
-            content:"基于gulp搭建的前端自动化构建"
-        }
-    });
-    Mock.mock("/user/content", {
-        status: 2,
-        data: {
-            title: "Gulp",
-            content:"基于gulp搭建的前端自动化构建"
+            content:"基于requireJS和Gulp搭建的前端脚手架搭建成功！！！"
         }
     });
 });

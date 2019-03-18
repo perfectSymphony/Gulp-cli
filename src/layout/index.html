@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- ws: 引入公共样式 -->
+    {{{include '../widget/public_style'}}}
+</head>
+<body style="visibility:hidden;">
+    <img src="../images/gulp.png" />
+    <div id="user_info">
+        <script id="userInfo" type="text/html">
+            <h2>{{data.content}}</h2>
+        </script>
+    </div>
+    <a href="list.html">前往内容列表页>>></a>
+    <!--ws: 公共Script -->
+    {{{include '../widget/public_script'}}}
+    <script>
+    //通过require的方式来引入需要的js
+      require( ['index'], function() {
+      });
+    </script>
+</body>
+
+</html>

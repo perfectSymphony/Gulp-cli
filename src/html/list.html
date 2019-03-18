@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--  引入公共样式 -->
+    <title>首页</title>
+<meta charset="utf-8">
+    <!--  引入公共样式 -->
+</head>
+<body style="visibility:hidden;">
+    <a href="index.html">点击返回首页</a>
+    <h3>实时新闻:</h3>
+    <div class="list">
+        <div class="layui-form">
+          <table class="layui-table">
+            <colgroup>
+              <col width="150">
+              <col width="150">
+              <col width="200">
+              <col>
+            </colgroup>
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>ID</th>
+                <th>imageUrl</th>
+                <th>openUrl</th>
+                <th>Title</th>
+              </tr> 
+            </thead>
+            <tbody id="listInfo">
+                <script type="text/html" id="listInfoTpl">
+                  {{each list}}
+                      <tr>
+                        <td>{{$index+1}}</td>
+                        <td>{{$value.group_id}}</td>
+                        <td>{{$value.image_url}}</td>
+                        <td>{{$value.open_url}}</td>
+                        <td>{{$value.title}}</td>
+                      </tr>    
+                  {{/each}}                
+                </script>
+            </tbody>
+          </table>
+        </div>        
+    </div>
+
+    <!-- 公共Script -->
+    <script src="../public/require/require.min.js"></script>
+<script src="../conf/require.config.js"></script>
+
+    <script>
+      require( ['list'], function() {
+      });
+    </script>
+</body>
+
+</html>

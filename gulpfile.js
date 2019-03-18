@@ -18,23 +18,23 @@ const gulp = require('gulp'),
     server = require('./src/conf/server.config.js');
 
 const path = {
-    cssfolder: './src/static/css/',
-    cssout: './dist/front/static/css',
-    css: './src/static/css/**/*.css',
-    less: './src/static/less/**/*.less',
-    htmlout: './dist/front/views',
-    html: './src/views/html/**/*.html',
-    jsout: './dist/front/static/js',
-    js: './src/static/js/**/*.js',
+    cssfolder: './src/css/',
+    cssout: './dist/front/css',
+    css: './src/css/**/*.css',
+    less: './src/less/**/*.less',
+    htmlout: './dist/front/html',
+    html: './src/html/**/*.html',
+    jsout: './dist/front/js',
+    js: './src/js/**/*.js',
     datout: './dist/front/data',  /*mock数据*/
     dat: './src/data/**/*.js',   
-    imageout: './dist/front/static/images',
-    image: './src/static/images/**/*',
+    imageout: './dist/front/images',
+    image: './src/images/**/*',
     publicout: './dist/front/public',
     public: './src/public/**/*',
     confout: './dist/front/conf',
     conf: './src/conf/**/*',
-    dist: './dist/front/views/index.html'
+    dist: './dist/front/html/index.html'
 };
 
 // NODE_ENV 跨平台的设置及使用环境变量 
@@ -63,14 +63,15 @@ const gulpSSH = new GulpSSH({
 
 // console.log(sshConfig);
 
-//组件和模板地址
-const widgetPath = {
-    dist: ['./dist/front/views/**/*']
-}
-
+//组件和模板地址 ----生产环境
 // const widgetPath = {
-//     src: ['./src/views/widget/**/*', './src/views/layout/**/*']
+//     dist: ['./dist/front/**/*']
 // }
+
+//组件和模板地址 ----开发环境
+const widgetPath = {
+    src: ['./src/widget/**/*', './src/layout/**/*']
+}
 
 const showError = function(err) {
     console.log('\n错误文件:', err.file, '\n错误行数:', err.line, '\n错误信息:', err.message);
@@ -79,7 +80,7 @@ const showError = function(err) {
 //运行将
 gulp.task('render', () => {
     renderFun();
-    gulp.watch([widgetPath.dist]).on('change', function() {
+    gulp.watch([widgetPath.src]).on('change', function() {
         renderFun();
     })
 })
@@ -213,6 +214,9 @@ gulp.task('dist', ['output'])
 /* 起服务，并监听各个资源，一旦有改动，就自动刷新页面 */
 gulp.task('live', ['less', 'render'], function() {
     browsersync.init(server)
+    gulp.watch(path.less, ['less'])
+    gulp.watch(path.js).on('change', browsersync.reload)
+    gulp.watch(path.html).on('change', browsersync.reload)    
 })
 //启动服务
 gulp.task('default', ['live']);

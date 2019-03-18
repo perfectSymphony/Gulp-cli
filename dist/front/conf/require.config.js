@@ -8,9 +8,9 @@ require.config({
         template: "public/artTemplate/template",
         mock: "public/mockjs/mock.min",
         data: "data/data",
-        index: "static/js/index/index",
-        utils: "static/js/commonjs/utils",
-        page1: "static/js/page1/page1"
+        index: "js/index/index",
+        utils: "js/commonjs/utils",
+        list: "js/list/list"
     },
     shim: {
         qrcode: {
@@ -21,10 +21,10 @@ require.config({
             deps: ["mock"]
         },
         index: {
-            deps: ["style!static/css/page/index.css"]
+            deps: ["style!css/page/index.css"]
         },
-        page1: {
-            deps: ["style!static/css/page/page1.css"]
+        list: {
+            deps: ["style!css/page/list.css"]
         }
     }
 });

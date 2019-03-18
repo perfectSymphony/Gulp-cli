@@ -19,8 +19,8 @@ var renderFun = function() {
     var env = process.cwd();
 
     // 读取文件目录
-    var middlePath = "src/views/layout/";
-    var outPath = "src/views/html/";
+    var middlePath = "src/layout/";
+    var outPath = "src/html/";
     var rootDir = path.join(env, middlePath);
     if (fs.existsSync(rootDir)) {
         var pageList = fs.readdirSync(rootDir);

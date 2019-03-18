@@ -1,0 +1,1 @@
+define(["jquery","data","template"],function(e,t,i){e("body").css("visibility","visible"),e.ajax({type:"GET",url:"/api/pc/feed/?min_behot_time=0&category=__all__&utm_source=toutiao&widen=1&tadrequire=true&as=A1751C982F80078&cp=5C8FE0C0F7884E1&_signature=zg9puhAVkomZOCHhpaochc4Paa",success:function(e){console.log(e)},error:function(e){alert("网络出错了！")}})});
