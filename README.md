@@ -56,11 +56,11 @@ git clone git@github.com:perfectSymphony/Gulp-cli.git
 ```
 $ cd Gulp-cli && npm install
 ```
-3、启动页面，访问<http://localhost:3333/dist/front/views/index.html>
+3、启动项目
 ```
 $ npm run start
 ```
-4、产出最终工程
+4、项目打包
 ```
 npm run build
 ```
@@ -72,14 +72,14 @@ Gulpfile.js中实现了项目自动化部署功能。需要用到自动化部署
 
 ``` 
 
-## 到微信公众号去提问：
+## 微信公众号：
 ![指尖下的精灵](https://raw.githubusercontent.com/perfectSymphony/Gulp-cli/b08538bc938d56aa729085bf5305afc425bf8d9c/Wechat/0.jpg)
 
 
 ## 备注
 
-* 可以随便根据自己的需求，修改配置，增加框架更多的功能
+* 本脚手架提供了基本的技术支持，可以根据自己的需求，修改。
 
-* 如有设计不合理地方，可以提出，也可以到我的微信公众号里面提出改进问题
+* 如有设计不合理地方，可以提出，也可以到我的微信公众号里面提出改进问题。
 
-* [项目地址](https://github.com/perfectSymphony/Gulp-cli) 如对你有帮助，希望给个Star ！哈哈哈！！
+* [项目地址](https://github.com/perfectSymphony/Gulp-cli) 如对你有帮助，希望给个Star。
