@@ -3,7 +3,6 @@
 
 
 ## [项目地址](https://github.com/perfectSymphony/Gulp-cli)
-* 如对你有帮助，希望给个Star (*￣︶￣)
 ```
 git clone git@github.com:perfectSymphony/Gulp-cli.git
 ```
@@ -74,6 +73,8 @@ Gulpfile.js中实现了项目自动化部署功能。需要用到自动化部署
 
 ``` 
 
+## 如果该项目有帮助到你，请动动你的手指，给一个Star。
+
 ## 微信公众号：
 ![指尖下的精灵](https://raw.githubusercontent.com/perfectSymphony/Gulp-cli/b08538bc938d56aa729085bf5305afc425bf8d9c/Wechat/0.jpg)
 
@@ -84,4 +85,4 @@ Gulpfile.js中实现了项目自动化部署功能。需要用到自动化部署
 
 * 如有设计不合理地方，可以提出，也可以到我的微信公众号里面提出改进问题。
 
-* [项目地址](https://github.com/perfectSymphony/Gulp-cli) 如对你有帮助，希望给个Star。
+* [项目地址](https://github.com/perfectSymphony/Gulp-cli) 如对你有帮助，希望给个Star(*￣︶￣)。
