@@ -72,7 +72,8 @@ Gulpfile.js中实现了项目自动化部署功能。需要用到自动化部署
 
 ``` 
 
-## 如果该项目有帮助到你，请动动你的手指，给一个Star。
+## 如果该项目有帮助到你，请动动你的手指，给一个Star (*￣︶￣)。
+
 
 ## 微信公众号：
 ![指尖下的精灵](https://raw.githubusercontent.com/perfectSymphony/Gulp-cli/b08538bc938d56aa729085bf5305afc425bf8d9c/Wechat/0.jpg)
