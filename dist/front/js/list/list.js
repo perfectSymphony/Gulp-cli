@@ -1,1 +1,0 @@
-define(["jquery","layui","template"],function(e,s,i){e("body").css("visibility","visible"),e.ajax({type:"GET",url:"/api/pc/realtime_news/",dataType:"json",success:function(s){if("success"==s.message){var s=s.data;e("#listInfo").html(i("listInfoTpl",{list:s}))}else"error"==s.message&&console.log("接口报错了")},error:function(e){alert("网络出错了！")}})});

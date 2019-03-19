@@ -1,1 +1,0 @@
-define(["jquery","data","template"],function(s,t,e){s("body").css("visibility","visible"),s.ajax({type:"post",url:"/user/getInfo",dataType:"json",success:function(t){if(1==t.status){var a=e("userInfo",t);s("#user_info").html(a)}else 0==t.status&&s("#datalist").html('<h1 class="tc nodadaShow">没有查询到分类的产品信息</h1>')},error:function(s){console.log(s)}})});
