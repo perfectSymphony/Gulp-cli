@@ -37,7 +37,7 @@ git clone git@github.com:perfectSymphony/Gulp-cli.git
 	- browsersync：启动项目;
 ```
 ## 跨域问题：
-开发环境：proxy；
+开发环境：proxy；<br />
 生产环境：根据自己公司的实际情况选择；
 
 ## 如何使用
@@ -59,11 +59,10 @@ $ npm run start
 npm run build
 ```
 
-## 项目启动命令
+## 相关命令
 ```
-单独编译： npm run build
-单独启动： npm run dev
-编译并启动： npm run start
+生产环境： npm run build
+开发环境： npm run dev
 ```
 
 ## 自动化部署功能
