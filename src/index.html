@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  @include('public_header.html')
+    <!-- {{{include '../widget/public_header'}}} -->
+    <div id="titleId">
+        <script type="text/html" id="titleIdTpl">
+            <title></title>
+        </script>
+    </div>
+</head>
+<body style="visibility:hidden;">
+    @include('public_top.html')
+     <!-- {{{include 'include/public_top'}}} -->
+   <div class="test">111111111111</div>
+    @include('script.html')
+    <script type="text/javascript">
+      require(['index'], function() {
+      });
+    </script>
+</body>
+
+</html>

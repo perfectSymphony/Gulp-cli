@@ -1,4 +1,15 @@
 {
-    "presets": [ [ "env", { "modules": false } ] ], // 貌似这里的modules为false才可以识别this，在浏览器环境中有用
-    "plugins": ["transform-remove-strict-mode"]
+  "presets": [
+    ["env", {
+      "modules": false,
+      "useBuiltIns": true,
+      "targets": {
+        "safari": "7",
+        "android": "4.0",
+        "browsers": ["last 2 versions", "not ie <= 8"]
+      },
+      "debug": false
+    }],
+    "stage-2"
+  ]
 }
