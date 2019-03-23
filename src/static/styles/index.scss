@@ -3,7 +3,17 @@ body {
 	#__bs_notify__ {
 		display: none !important;
 	}
- 
+ 	.demo {
+ 		margin: 10px;
+ 		height: 74%;
+ 		overflow: auto;
+
+ 		img {
+ 			width: 300px;
+ 			height: 300px;
+ 			margin-bottom:5px;
+ 		}
+ 	}	
  	.layui-footer {
  		text-align: center !important;
  	}

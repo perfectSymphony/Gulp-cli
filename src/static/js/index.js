@@ -16,7 +16,7 @@ define(["jquery", "utils", "layui", "template"], function($, utils, layui,templa
     var queryData = () => {
         $.ajax({
             type: "GET",
-            url: interfaceProxy + '/pc/realtime_news/',
+            url: interfaceProxy + '/pc/feed/?category=gallery_old_picture&utm_source=toutiao&max_behot_time=0&as=A1850C4916B409C&cp=5C96E4A0096C4E1&_signature=8TCedgAArbEfdsE9RS1-HvEwnm',
             header: {
                 'content-type': 'application/x-www-form-urlencoded'
             },
@@ -35,14 +35,19 @@ define(["jquery", "utils", "layui", "template"], function($, utils, layui,templa
     }
 
     var isData = (data) => {
-        return data.matterExtend != '' && data.matterExtend != 0 && data.matterExtend != null && data.matterExtend != 'undefined';
+        return data != '' && data != 0 && data != null && data != 'undefined';
     }
 
     // 回调函数
     var callback = (data) => {
-        console.log(data);
         if (isData(data)) {
-
+            if(data.message == 'success'){
+                var data = data.data;
+                console.log(data);
+                $(".demo").html(template("demoTpl",{list : data}))
+            } else if(data.message == 'error'){
+                console.log('接口报错了')
+            }
         }
     }
 
