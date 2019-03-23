@@ -5,15 +5,14 @@ require.config({
         style: "assets/require/css.min",
         jquery: "assets/jquery/jquery-1.11.3.min",
         template: "assets/artTemplate/template",
-       // mock: "public/mockjs/mock.min",
-        // data: "data/data",
+        layui: 'assets/layui/layui',
         index: "js/index",
         utils: "js/utils",
     },
     shim: {
-        // data: {
-        //     deps: ["mock"]
-        // },
+        layui: {
+            deps: ["style!assets/layui/css/layui.css"]
+        },
         index: {
             deps: ["style!css/index.css"]
         }

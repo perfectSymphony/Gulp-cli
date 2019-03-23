@@ -1,4 +1,4 @@
-define(["jquery", "utils", "template"], function($, utils, template) {
+define(["jquery", "utils", "layui", "template"], function($, utils, layui, template) {
     $("body").css("visibility", "visible");
     const interfaceProxy = utils.interfaceProxy()
 
