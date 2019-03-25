@@ -19,11 +19,10 @@
       <div class="demo">
         <script type="text/html" id="demoTpl">
           {{each list}}
-          <img lay-src="{{$value.image_url}}">
+          <img src='/static/images/loading.gif' lay-src="{{$value.image_url}}">
           {{/each}}
         </script>
       </div>
-      <!-- src='/static/images/loading.gif' -->
   </div>
   
   @include('public_footer.html')
@@ -40,6 +39,17 @@
             ,scrollElem: '.demo'
           });
           
+        });
+
+        // 侧导航
+        layui.use('element', function(){
+          var element = layui.element;
+          
+          //监听导航点击
+          element.on('nav(demo)', function(elem){
+            //console.log(elem)
+            layer.msg(elem.text());
+          });
         });
       });
 

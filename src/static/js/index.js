@@ -16,7 +16,7 @@ define(["jquery", "utils", "layui", "template"], function($, utils, layui,templa
     var queryData = () => {
         $.ajax({
             type: "GET",
-            url: interfaceProxy + '/pc/feed/?category=gallery_old_picture&utm_source=toutiao&max_behot_time=0&as=A1850C4916B409C&cp=5C96E4A0096C4E1&_signature=8TCedgAArbEfdsE9RS1-HvEwnm',
+            url: interfaceProxy + '/pc/feed/?category=gallery_old_picture',
             header: {
                 'content-type': 'application/x-www-form-urlencoded'
             },
