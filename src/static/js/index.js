@@ -4,14 +4,8 @@ define(["jquery", "utils", "layui", "template"], function($, utils, layui,templa
 
     // 调接口
     window.onload = function() {
-        query();
-    };
-
-    var query = () => {
-        var obj = utils.GetRequest();
-        var b64DecodeUnicode = utils.b64DecodeUnicode;
         queryData();
-    }
+    };
 
     var queryData = () => {
         $.ajax({
