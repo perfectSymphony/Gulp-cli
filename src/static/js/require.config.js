@@ -13,9 +13,12 @@ require.config({
     shim: {
         layui: {
             deps: ["style!assets/layui/css/layui.css"]
-        },        
+        },       
         index: {
             deps: ["style!css/index.css"]
+        },        
+        footer: {
+            deps: ["style!css/footer.css"]
         }
     }
 });

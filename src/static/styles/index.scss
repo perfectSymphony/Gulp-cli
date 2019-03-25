@@ -1,3 +1,4 @@
+@import 'footer.scss';
 
 body {
 	#__bs_notify__ {
@@ -5,12 +6,13 @@ body {
 	}
  	.demo {
  		margin: 10px;
- 		height: calc(100vh - 130px);
+ 		height: calc(100vh - 150px);
  		overflow: auto;
 
  		img {
- 			width: 326px;
+ 			width: 300px;
  			height: 300px;
+ 			cursor: pointer;
  			margin-bottom:5px;
  		}
  	}	
@@ -20,8 +22,6 @@ body {
 	.layui-body::-webkit-scrollbar {
 	 	display: none;
 	}
- 	.layui-footer {
- 		text-align: center !important;
- 	}
+
 
 }
